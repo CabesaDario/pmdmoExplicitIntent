@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Proyecto ExplicitIntent Correcto</string>
+    <string name="main_lblName">Name</string>
+    <string name="main_txtName">(name)</string>
+    <string name="main_lblAge">Age</string>
+    <string name="main_txtAge">(age)</string>
+    <string name="main_btnShow">SHOW</string>
+    <string name="main_invalid_name">Nombre incorrecto</string>
+    <string name="main_invalid_age">Edad incorrecta</string>
+</resources>

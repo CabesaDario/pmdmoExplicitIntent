@@ -1,0 +1,64 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/main_margin">
+
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/main_lblName"
+        app:layout_constraintEnd_toEndOf="@id/txtName"
+        app:layout_constraintStart_toStartOf="@id/txtName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/main_txtName"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@id/txtAge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblName"
+        tools:ignore="Autofill">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lblAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="@string/main_lblAge"
+        app:layout_constraintEnd_toEndOf="@id/txtAge"
+        app:layout_constraintStart_toStartOf="@id/txtAge"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="@integer/main_txtAge_ems"
+        android:gravity="end"
+        android:hint="@string/main_txtAge"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLength="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblAge"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_margin"
+        android:text="@string/main_btnShow"
+        app:layout_constraintTop_toBottomOf="@+id/txtAge" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
